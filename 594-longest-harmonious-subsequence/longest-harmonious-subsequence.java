@@ -6,12 +6,8 @@ class Solution {
         }
         int max=0;
         for(int i:map.keySet()){
-            if(map.containsKey(i-1)){
-                max=Math.max(max,map.get(i)+map.get(i-1));
-            }else if(map.containsKey(i+1)){
+            if(map.containsKey(i+1)){
                 max=Math.max(max,map.get(i)+map.get(i+1));
-            }else{
-                continue;
             }
         }
         return max;
