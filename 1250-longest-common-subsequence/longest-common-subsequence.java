@@ -2,7 +2,7 @@ class Solution {
     public int longestCommonSubsequence(String text1, String text2) {
 
         /* 
-            -> 
+            -> in each box in dp[i][j] we store the number of common elements from txt1 till i'th index and txt2 till j'th index;
         */
 
 
